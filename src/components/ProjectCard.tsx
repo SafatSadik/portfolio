@@ -127,10 +127,7 @@ export function ProjectCard({ project }: { project: Project }) {
     return () => clearInterval(t);
   }, [paused, mediaItems.length, idx]);
 
-  const handleClick = () => {
-    if (project.liveUrl)
-      window.open(project.liveUrl, "_blank", "noopener,noreferrer");
-  };
+
 
   return (
     <div
